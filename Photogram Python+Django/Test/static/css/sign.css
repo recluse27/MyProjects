@@ -1,0 +1,79 @@
+body {
+	background: url(background.jpg);
+	background-size: cover;
+}
+#sign {
+	font-weight: bold;
+	margin: 3.5em 10em 0em 11em;
+}
+#label {
+	position: fixed;
+	text-decoration: none;
+	top: 15%;
+  left: 40%;
+	font-family: Montez;
+	color: rgb(0, 0, 0);
+	font-weight: bold;	
+	font-size: 4.1em;	
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+#knopka_in {
+	color: rgb(255, 240, 245); /* цвет текста */
+	text-decoration: none; /* убирать подчёркивание у ссылок */
+	user-select: none; /* убирать выделение текста */
+	background: rgba(0, 191, 255, 1); /* фон кнопки */
+	padding: .6em 1.3em; /* отступ от текста */
+	outline: none; /* убирать контур в Mozilla */
+	position: absolute;
+	float: left;
+	margin: 20em 0 2.5em 5.5em;
+	box-shadow: 0 0 6px rgba(0,0,0,0.5); /* Параметры тени */
+	border-radius: 8px;
+}
+#knopka_up {
+	color: rgb(255, 240, 245); /* цвет текста */
+	text-decoration: none; /* убирать подчёркивание у ссылок */
+	user-select: none; /* убирать выделение текста */
+	background: rgba(0, 191, 255, 1); /* фон кнопки */
+	padding: .6em 1.3em; /* отступ от текста */
+	outline: none; /* убирать контур в Mozilla */
+	position: absolute;
+	float: right;
+	margin: 20em 0 2.5em 23.5em;
+	box-shadow: 0 0 6px rgba(0,0,0,0.5); /* Параметры тени */
+	border-radius: 8px;
+}  
+#knopka_in:hover { 
+	background: rgb(232,95,76);
+	transition: 0.2s ease-out;
+}
+#knopka_in:active { 
+	background: rgb(152,15,0);
+	transition: 0.2s 	ease-out; 
+}
+#knopka_up:hover { 
+	background: rgb(232,95,76);
+	transition: 0.2s ease-out; 
+}
+#knopka_up:active { 
+	background: rgb(152,15,0);
+	transition: 0.2s ease-out; 
+}
+#wrapp {
+	position: absolute;
+	height: 60%;
+	width: 40%;
+	margin:6% 10% 12% 28%;
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	border-radius: 12px;	
+}
+input {
+	box-shadow: 0 0 6px rgba(0,0,0,0.5);
+	border-radius: 8px;
+	padding: .2em 0.65em;
+}

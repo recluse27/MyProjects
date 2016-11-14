@@ -1,0 +1,151 @@
+body { 
+	margin: 0; 
+}
+ header {
+ 	margin-bottom: 3.5em;
+ }
+ .wrap a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+#logo a:hover {
+	color: #008000;
+	transition: all 0.2s ease-in-out;
+}
+#sign_out a:hover {
+	color: #008000;
+	transition: all 0.2s ease-in-out;
+}
+ .gallery {
+ 	margin-left: 6.5em;
+ 	margin-right: 5em;
+ 	float: left;
+ }
+ .gallery img {
+ 	margin: 1px; 
+ 	border: 3px solid #fff;
+ }
+ a.photo:hover img {
+ 	border: 3px solid #034F80; 
+ }
+#upload {
+	margin: 2em 0 2em 5em;
+	float: left;	
+}
+ .image {
+  float: left;
+ 	width: 262.5px;
+  height: 199.5px;
+  margin: 2px 7px 2px 7px; 
+ 	border: 3px solid #fff;
+ 	border-radius: 10px;
+ 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+ }
+ .image:hover {
+ 	border: 3px solid #034F80; 
+ }
+ .wrap {
+ 	position: fixed;
+ 	top: 0;
+ 	margin: 0 auto;
+ 	width: 100%;
+ 	height: 2.85em;
+ 	background: #008B8B;
+ 	border-radius: 0 0 .7em .7em;
+ 	box-shadow: 0 0 5px #666;
+ }
+ #logo {
+ 	float: left;
+ 	margin: 0 0 0 1%;
+ 	font-family: 'Montez', cursive;
+ 	font-size: 2em;
+ 	font-weight: bold;
+ 	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+ }
+ #sign_out {
+ 	float: right;
+ 	margin: 0 1.5% 0 0;
+ 	font-family: 'Montez', cursive;
+ 	font-size: 2em;
+ 	font-weight: bold;
+ 	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+
+ }
+#knopka {
+	color: rgb(255, 240, 245); /* цвет текста */
+	text-decoration: none; /* убирать подчёркивание у ссылок */
+	user-select: none; /* убирать выделение текста */
+	background: rgba(0, 191, 255, 1); /* фон кнопки */
+	padding: .7em 1.5em; /* отступ от текста */
+	outline: none; /* убирать контур в Mozilla */
+	position: absolute;
+	float: right;
+	margin: 12em 0 2.5em 22em;
+	box-shadow: 0 0 6px rgba(0,0,0,0.5); /* Параметры тени */
+	border-radius: 8px;
+}
+#knopka:hover { 
+	background: rgb(232,95,76);
+	transition: 0.2s ease-out;
+}
+#knopka:active { 
+	background: rgb(152,15,0);
+	transition: 0.2s 	ease-out; 
+}
+#sign {
+	font-weight: bold;
+}
+#wrapp {
+	position: absolute;
+	height: 40%;
+	width: 40%;
+	margin:12% 10% 15% 28%;
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	border-radius: 12px;	
+}
+.album {
+	float: left;
+	margin: 0.5em 1em 2em 3em;
+}
+.albums {
+	font-family: 'Montez', cursive;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: rgba(232,95,76, 1);
+	text-decoration: none; 
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+#add_photo {
+	float: right;
+ 	margin: 0 2% 0 0;
+ 	font-family: 'Montez', cursive;
+ 	font-size: 2em;
+ 	font-weight: bold;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+#add_photo a:hover {
+	color: #008000;
+	transition: all 0.2s ease-in-out;
+}
+input {
+	box-shadow: 0 0 6px rgba(0,0,0,0.5);
+	border-radius: 8px;
+	padding: .2em 0.65em;
+}

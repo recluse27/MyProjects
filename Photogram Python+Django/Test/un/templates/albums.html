@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+
+{% block albums %}
+
+{% for album in albums %}
+<div class="album">
+	<a href="/albums/get/{{ album.id }}/"> <img src="{% static "Book-48.png" %}" width="60" height="50"> </a>
+	<h2><a class="albums" href="/albums/get/{{ album.id }}/">{{ album.album_name }}</a></h2>
+	<h4 style="font-size:15px;">Date: {{ album.album_date }}</h4>
+	<h4 style="font-size:15px;">Created by: {{ album.album_user }}</h4>
+</div>
+{% endfor %}
+
+{% endblock %}

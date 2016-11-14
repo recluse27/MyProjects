@@ -1,0 +1,16 @@
+{% extends 'sign.html' %}
+
+{% block login %}
+    <form action="/auth/login/" method="post">
+        {% csrf_token %}
+        <p><label for="username">Username:</label></p>
+        <p><input type="text" name="username" id="username"></p>
+        <p><label for="password">Password:</label></p>
+        <p><input type="password" name="password" id="password"></p>
+        {% if login_error %}
+            <p><label>{{ login_error }}</label></p>
+        {% endif %}
+        <p><input type="submit" value="Enter"></p>
+        <!--<a id="knopka" href="/auth/registration/">Sign Up</a>-->
+    </form>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Photogram</title>
+	<link rel="stylesheet" type="text/css" href="{% static "static/css/main.css" %}">
+	<link rel="shortcut icon" href="{% static 'static/img/favicon.ico' %}" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="{% static 'static/fancybox/source/jquery.fancybox.pack.js' %}"></script>
+	<script type="text/javascript" src="{% static 'static/fancybox/lib/jquery.mousewheel-3.0.6.pack.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'static/fancybox/source/jquery.fancybox.css' %}" type="text/css" media="screen" />
+	<script>
+		$(document).ready(function() {
+			$("a.photo").fancybox({
+				openEffect  : 'fade',
+				closeEffect : 'fade'
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<div id="logo"> <a href="/">Photogram</a> </div>
+			{% if username %}
+				<div id="sign_out"> <a href="/auth/logout/">Sign Out ({{ username }})</a> </div>
+					{% if album.id %}
+					<div id="add_photo"> <a href="#add">Add photo</a> </div>
+					{% endif %}
+				{% else %}
+				<div id="sign_out"> <a href="/auth/login/">Sign In</a> </div>
+			{% endif %}
+		</div>
+	</header>
+	
+	<div>
+		{% block albums %}{% endblock %}
+		{% block album %}{% endblock %}
+		<a name="add"></a>
+	</div>
+</body>
+</html>

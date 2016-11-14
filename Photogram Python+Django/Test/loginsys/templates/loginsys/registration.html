@@ -1,0 +1,14 @@
+{% extends 'sign.html' %}
+
+{% block login %}
+    <div>
+        <form action="/auth/registration/" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            {% if error %}
+                <p><label>{{ error }}</label></p>
+            {% endif %}
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+{% endblock %}

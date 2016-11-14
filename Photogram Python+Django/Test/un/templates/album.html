@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+
+{% block album %}
+
+<div class="gallery">
+	{% for photo in photos %}
+		{% if photo.photo_image %}
+		<a class="photo" rel="gallery" href="{{MEDIA_URL}}{{ photo.photo_image.url}}" title="Name: {{ photo.photo_name 	}} | Apploaded by: {{ photo.photo_user }} | Date: {{ photo.photo_date }}">
+			<!--<img src="{{MEDIA_URL}}{{ photo.photo_image.url}}" width="280px" height="180px" alt="" />-->
+			<div class="image" style="
+  background: url('{{MEDIA_URL}}{{ photo.photo_image.url}}') no-repeat center center;
+  background-size: cover;
+  
+  ">
+  </div>
+		</a>
+		{% endif %}
+	{% endfor %}
+</div>
+
+{% if username %}
+	<div id="upload">
+		<form action="/albums/get/{{ album.id }}/" method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+			{{ form.as_p }}
+			<input type="submit" class="button" value="Upload photo">
+		</form>
+	</div>
+{% endif %}
+
+{% endblock %}

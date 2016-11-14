@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Photogram</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'static/css/sign.css' %}">
+	<link rel="shortcut icon" href="{% static 'static/img/favicon.ico' %}" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div id="wrapp">
+	<a id="label" href="/">Photogram</a>
+			<a href="/auth/login/" id="knopka_in">Sign In</a>
+			<a href="/auth/registration/" id="knopka_up">Sign Up</a>
+			<br><br>
+				<div id="sign">
+					{% block login %}{% endblock %}
+				</div>  
+	</div>
+</body>
+</html>
