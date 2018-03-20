@@ -1,2 +1,1 @@
-# my_works
-My stud works
+Some of my pet and studying projects 
