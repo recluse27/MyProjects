@@ -1,0 +1,6 @@
+Use 2 ways to realise next fuctions (using frame and using array):
+1. Select all households with a total active power consumption greater than 5 kW.
+2. Select all households in which the voltage exceeds 235 V.
+3. Select all households whose current strength lies within 19-20 And for them to identify those with a washing machine and refrigeration consume more than boiler and air conditioning.
+4. Select randomly 500,000 households (without repetition of elements of the sample). Then calculate the average values ??of all 3 groups of electric energy consumption.
+5. Select those households that consume more than 18-00 after 6 kW per minute on average, among the selected identify those with basic electricity consumption in the time frame falls on the washing machine, dryer, refrigerator and lighting (Group 2 is the largest) and choose a third result of the first half and one in four result in the second half.

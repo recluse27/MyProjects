@@ -1,0 +1,6 @@
+1. Create a function that will download information for each Ukraine region consisting VHI-index. Download from http://www.star.nesdis.noaa.gov/smcd/emb/vci/VH/index.php
+2. Create a function that will load information in pandas frame. Rename columns.
+3. Create functions that will do next actions:
+	- Analize VHI for region during the year, find min and max;
+	- Analize VHI for region during all period, find year(s) with extreme drought;
+	- Analize VHI for region during all period, find year(s) with normal drought.

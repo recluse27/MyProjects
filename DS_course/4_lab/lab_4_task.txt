@@ -1,0 +1,6 @@
+Create .bat file that will do next actions:
+1. Unzip archive and rename pictures;
+2. Concatenation channel visible, near and middle infrared spectral range images into one HEOTIFF. Download library from gdal.org. Download pictures from http://earthexplorer.usgs.gov;
+3. Project Satellite image at the specified coordinate system mapping;
+4. Concatenation images of two adjacent 'row' with the same 'path';
+5. Trime the resulting images for a given size.

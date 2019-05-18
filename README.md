@@ -1,1 +1,1 @@
-Some of my pet and studying projects 
+# Some of my university projects 

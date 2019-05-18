@@ -1,0 +1,5 @@
+Create a web-application using Spyre module that will allow to do next actions:
+	- to choose time series VCI, TCI, VHI  for dataset from laboratory work 1 (drop down list);
+	- Choose the region for which the analysis will be carried out (the drop down list);
+	- Identify period of weeks for which data is selected;
+	- Create a plot(chart).
